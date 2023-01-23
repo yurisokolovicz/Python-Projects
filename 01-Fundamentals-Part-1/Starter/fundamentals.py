@@ -90,3 +90,24 @@ pay_fulltime = get_pay(32)
 print(pay_fulltime)
 
 # Functions with multiple arguments
+# , = comma
+# : = colon 
+
+def get_pay_with_more_inputs (num_hours, hourly_wage, tax_bracket):
+    pay_pretax = num_hours * hourly_wage
+    pay_aftertax = pay_pretax * (1 - tax_bracket)
+    return pay_aftertax
+
+salary_aftertax = get_pay_with_more_inputs(40, 24, .22)
+print(salary_aftertax)
+
+salary_aftertax = get_pay_with_more_inputs(40, 15, .12)
+print(salary_aftertax)
+
+# Functions with no arguments
+
+def message_general():
+    print("Hello, you!")
+    print("Good morning!")
+
+message_general()
