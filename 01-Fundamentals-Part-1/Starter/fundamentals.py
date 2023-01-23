@@ -115,40 +115,67 @@
 
 ## Data Types - integers, floats, booleans, and strings.
 
-# Integers
-# positive and negative numbers without any fractional part (0, 1, 2, 3, ...)
+# # Integers
+# # positive and negative numbers without any fractional part (0, 1, 2, 3, ...)
 
-x = 14
-print(x)
-print(type(x))
+# x = 14
+# print(x)
+# print(type(x))
 
-# Floats
-# Floats are numbers with fractional parts. They can have many numbers after decimal.
+# # Floats
+# # Floats are numbers with fractional parts. They can have many numbers after decimal.
 
-nearly_pi = 3.141592653589793238462643383279502
-print(nearly_pi)
-print(type(nearly_pi))
+# nearly_pi = 3.141592653589793238462643383279502
+# print(nearly_pi)
+# print(type(nearly_pi))
 
-# We can also specify a float with a fraction.
-almost_pi = 22/7
-print(almost_pi)
-print(type(almost_pi))
+# # We can also specify a float with a fraction.
+# almost_pi = 22/7
+# print(almost_pi)
+# print(type(almost_pi))
 
-# One function that is particularly useful for fractions is the round() function. It lets you round a number to a specified number of decimal places.
-# Round to 5 decimal places
-rounded_pi = round(almost_pi, 5)
-print(rounded_pi)
-print(type(rounded_pi))
+# # One function that is particularly useful for fractions is the round() function. It lets you round a number to a specified number of decimal places.
+# # Round to 5 decimal places
+# rounded_pi = round(almost_pi, 5)
+# print(rounded_pi)
+# print(type(rounded_pi))
 
-rounded_pi = round(almost_pi, 0)
-print(rounded_pi)
-print(type(rounded_pi))
+# rounded_pi = round(almost_pi, 0)
+# print(rounded_pi)
+# print(type(rounded_pi))
 
-# Whenever you write an number with a decimal point (.), Python recognizes it as a float data type.
-y_float = 1.
-print(y_float)
-print(type(y_float)) #float
+# # Whenever you write an number with a decimal point (.), Python recognizes it as a float data type.
+# y_float = 1.
+# print(y_float)
+# print(type(y_float)) #float
 
-y_float = 1
-print(y_float)
-print(type(y_float)) #int
+# y_float = 1
+# print(y_float)
+# print(type(y_float)) #int
+
+# Booleans - represent one of two values: True or False. In the code cell below, z_one is set to a boolean with value True
+from pickle import FALSE
+
+
+z_one = True
+print(z_one)
+print(type(z_one))
+
+z_two = False
+print(z_two)
+print(type(z_two))
+
+# Booleans are used to represent the truth value of an expression. Since 1 < 2 is a true statement, z_three takes on a value of True.
+z_three = (1 < 2) #True
+print(z_three)
+print(type(z_three))
+
+z_four = (5 < 3)
+print(z_four)
+print(type(z_four)) #Fakse
+
+# We can switch the value of a boolean by using (not). So, not True is equivalent to False, and not False becomes True.
+
+z_five = not z_four
+print(z_five)
+print(type(z_five)) #True
