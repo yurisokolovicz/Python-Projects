@@ -3,7 +3,9 @@
 # print("Hello, world!")
 # print (["Yuri", 100, 25.20])
 
+
 # ## Arithmetic
+
 
 # print(2 + 1)
 # print(2 - 1)
@@ -40,26 +42,51 @@
 # print(type(a))
 # print(type(b))
 
-# Using Multiple Variables
-num_years = 4
-days_per_year = 365
-hours_per_day = 24
-mins_per_hour = 60
-secs_per_min = 60
+# # Using Multiple Variables
+# num_years = 4
+# days_per_year = 365
+# hours_per_day = 24
+# mins_per_hour = 60
+# secs_per_min = 60
 
-# Calculate the number of seconds in four years
+# # Calculate the number of seconds in four years
 
-total_secs = secs_per_min * mins_per_hour * hours_per_day * days_per_year * num_years
-print(total_secs)
+# total_secs = secs_per_min * mins_per_hour * hours_per_day * days_per_year * num_years
+# print(total_secs)
 
-# Update to include leap years - devemos escrever a equacao novamente apos atualizar a variavel days_per_year
-days_per_year = 365.25
-total_secs = secs_per_min * mins_per_hour * hours_per_day * days_per_year * num_years
-print(total_secs)
+# # Update to include leap years - devemos escrever a equacao novamente apos atualizar a variavel days_per_year
+# days_per_year = 365.25
+# total_secs = secs_per_min * mins_per_hour * hours_per_day * days_per_year * num_years
+# print(total_secs)
 
-my_income = 1000 # salario
-tax_rate = 0.15 # 15% de impostos 
-may_taxes = my_income * tax_rate
-print(may_taxes)
+# my_income = 1000 # salario
+# tax_rate = 0.15 # 15% de impostos 
+# may_taxes = my_income * tax_rate
+# print(may_taxes)
 
-## Introduction to Strings
+
+## Functions - A function is a block of code designed to perform a specific task. 
+
+
+# Define the function
+def add_three(input_var): # header
+    output_var = input_var + 3 # body
+    return output_var
+
+# Run or call a function
+new_number = add_three(10)
+print(new_number)
+
+
+def get_pay(num_hours):
+    pay_pretax = num_hours * 15
+    pay_aftertax = pay_pretax * (1 - .12)
+    return pay_aftertax
+
+pay_fulltime = get_pay(40)
+print(pay_fulltime)
+
+pay_fulltime = get_pay(32)
+print(pay_fulltime)
+
+# Functions with multiple arguments
