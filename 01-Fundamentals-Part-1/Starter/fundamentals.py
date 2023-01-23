@@ -65,49 +65,90 @@
 # print(may_taxes)
 
 
-## Functions - A function is a block of code designed to perform a specific task. 
+# ## Functions - A function is a block of code designed to perform a specific task. 
 
 
-# Define the function
-def add_three(input_var): # header
-    output_var = input_var + 3 # body
-    return output_var
+# # Define the function
+# def add_three(input_var): # header
+#     output_var = input_var + 3 # body
+#     return output_var
 
-# Run or call a function
-new_number = add_three(10)
-print(new_number)
+# # Run or call a function
+# new_number = add_three(10)
+# print(new_number)
 
 
-def get_pay(num_hours):
-    pay_pretax = num_hours * 15
-    pay_aftertax = pay_pretax * (1 - .12)
-    return pay_aftertax
+# def get_pay(num_hours):
+#     pay_pretax = num_hours * 15
+#     pay_aftertax = pay_pretax * (1 - .12)
+#     return pay_aftertax
 
-pay_fulltime = get_pay(40)
-print(pay_fulltime)
+# pay_fulltime = get_pay(40)
+# print(pay_fulltime)
 
-pay_fulltime = get_pay(32)
-print(pay_fulltime)
+# pay_fulltime = get_pay(32)
+# print(pay_fulltime)
 
-# Functions with multiple arguments
-# , = comma
-# : = colon 
+# # Functions with multiple arguments
+# # , = comma
+# # : = colon 
 
-def get_pay_with_more_inputs (num_hours, hourly_wage, tax_bracket):
-    pay_pretax = num_hours * hourly_wage
-    pay_aftertax = pay_pretax * (1 - tax_bracket)
-    return pay_aftertax
+# def get_pay_with_more_inputs (num_hours, hourly_wage, tax_bracket):
+#     pay_pretax = num_hours * hourly_wage
+#     pay_aftertax = pay_pretax * (1 - tax_bracket)
+#     return pay_aftertax
 
-salary_aftertax = get_pay_with_more_inputs(40, 24, .22)
-print(salary_aftertax)
+# salary_aftertax = get_pay_with_more_inputs(40, 24, .22)
+# print(salary_aftertax)
 
-salary_aftertax = get_pay_with_more_inputs(40, 15, .12)
-print(salary_aftertax)
+# salary_aftertax = get_pay_with_more_inputs(40, 15, .12)
+# print(salary_aftertax)
 
-# Functions with no arguments
+# # Functions with no arguments
 
-def message_general():
-    print("Hello, you!")
-    print("Good morning!")
+# def message_general():
+#     print("Hello, you!")
+#     print("Good morning!")
 
-message_general()
+# message_general()
+
+
+## Data Types - integers, floats, booleans, and strings.
+
+# Integers
+# positive and negative numbers without any fractional part (0, 1, 2, 3, ...)
+
+x = 14
+print(x)
+print(type(x))
+
+# Floats
+# Floats are numbers with fractional parts. They can have many numbers after decimal.
+
+nearly_pi = 3.141592653589793238462643383279502
+print(nearly_pi)
+print(type(nearly_pi))
+
+# We can also specify a float with a fraction.
+almost_pi = 22/7
+print(almost_pi)
+print(type(almost_pi))
+
+# One function that is particularly useful for fractions is the round() function. It lets you round a number to a specified number of decimal places.
+# Round to 5 decimal places
+rounded_pi = round(almost_pi, 5)
+print(rounded_pi)
+print(type(rounded_pi))
+
+rounded_pi = round(almost_pi, 0)
+print(rounded_pi)
+print(type(rounded_pi))
+
+# Whenever you write an number with a decimal point (.), Python recognizes it as a float data type.
+y_float = 1.
+print(y_float)
+print(type(y_float)) #float
+
+y_float = 1
+print(y_float)
+print(type(y_float)) #int
