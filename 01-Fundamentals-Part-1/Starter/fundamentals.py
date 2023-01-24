@@ -153,29 +153,71 @@
 # print(y_float)
 # print(type(y_float)) #int
 
-# Booleans - represent one of two values: True or False. In the code cell below, z_one is set to a boolean with value True
-from pickle import FALSE
+
+# # Booleans - represent one of two values: True or False. In the code cell below, z_one is set to a boolean with value True
+# from pickle import FALSE
 
 
-z_one = True
-print(z_one)
-print(type(z_one))
+# z_one = True
+# print(z_one)
+# print(type(z_one))
 
-z_two = False
-print(z_two)
-print(type(z_two))
+# z_two = False
+# print(z_two)
+# print(type(z_two))
 
-# Booleans are used to represent the truth value of an expression. Since 1 < 2 is a true statement, z_three takes on a value of True.
-z_three = (1 < 2) #True
-print(z_three)
-print(type(z_three))
+# # Booleans are used to represent the truth value of an expression. Since 1 < 2 is a true statement, z_three takes on a value of True.
+# z_three = (1 < 2) #True
+# print(z_three)
+# print(type(z_three))
 
-z_four = (5 < 3)
-print(z_four)
-print(type(z_four)) #Fakse
+# z_four = (5 < 3)
+# print(z_four)
+# print(type(z_four)) #False
 
-# We can switch the value of a boolean by using (not). So, not True is equivalent to False, and not False becomes True.
+# # We can switch the value of a boolean by using (not). So, not True is equivalent to False, and not False becomes True.
 
-z_five = not z_four
-print(z_five)
-print(type(z_five)) #True
+# z_five = not z_four
+# print(z_five)
+# print(type(z_five)) #True
+
+
+# Strings - The string data type is a collection of characters (like alphabet letters, punctuation, numerical digits, or symbols) contained in quotation marks. Strings are commonly used to represent text.
+
+w = "Hello, Python!"
+print(w)
+print(type(w))
+print(len(w))
+
+# One special type of string is the empty string, which has length zero.
+shortest_string = ""
+print(type(shortest_string))
+print(len(shortest_string))
+
+# Converting numbers in string
+
+my_number = "1.12321"
+print(my_number)
+print(type(my_number))
+
+# If we have a string that is convertible to a float, we can use float().
+
+also_my_number = float(my_number)
+print(also_my_number)
+print(type(also_my_number))
+
+# ust like you can add two numbers (floats or integers), you can also add two strings. It results in a longer string that combines the two original strings by concatenating them.
+
+new_string = "abc" + "def"
+print(new_string)
+print(type(new_string))
+
+# Note that it's not possible to do subtraction or division with two strings. You also can't multiply two strings, but you can multiply a string by an integer. This again results in a string that's just the original string concatenated with itself a specified number of times.
+
+newest_string = "abc" * 3
+print(newest_string)
+print(type(newest_string))
+
+# Note that you cannot multiply a string by a float! Trying to do so will return an error.
+
+# will_not_work = "abc" * 3.
