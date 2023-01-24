@@ -269,4 +269,16 @@ def evaluate_temp_while_else(temp):
 
 print(evaluate_temp_while_else(37))
 
-# "if ... elif ... else" statements
+# "if ... elif ... else" statements - We can use "elif" (which is short for "else if") to check if multiple conditions might be true
+
+def evaluate_temp_with_elif(temp):
+    if temp > 38:
+        message = "Fever!"
+    elif temp > 35:
+        message = "Normal temperature."
+    else:
+        message = "Low temperature."
+    return message
+
+print(evaluate_temp_with_elif(36))
+print(evaluate_temp_with_elif(34))
