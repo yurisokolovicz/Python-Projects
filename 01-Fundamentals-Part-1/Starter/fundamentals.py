@@ -113,9 +113,9 @@
 # message_general()
 
 
-## Data Types - integers, floats, booleans, and strings.
+# ## Data Types - integers, floats, booleans, and strings.
 
-# # Integers
+# ## Integers
 # # positive and negative numbers without any fractional part (0, 1, 2, 3, ...)
 
 # x = 14
@@ -154,7 +154,7 @@
 # print(type(y_float)) #int
 
 
-# # Booleans - represent one of two values: True or False. In the code cell below, z_one is set to a boolean with value True
+# ## Booleans - represent one of two values: True or False. In the code cell below, z_one is set to a boolean with value True
 # from pickle import FALSE
 
 
@@ -182,42 +182,91 @@
 # print(type(z_five)) #True
 
 
-# Strings - The string data type is a collection of characters (like alphabet letters, punctuation, numerical digits, or symbols) contained in quotation marks. Strings are commonly used to represent text.
+# ## Strings - The string data type is a collection of characters (like alphabet letters, punctuation, numerical digits, or symbols) contained in quotation marks. Strings are commonly used to represent text.
 
-w = "Hello, Python!"
-print(w)
-print(type(w))
-print(len(w))
+# w = "Hello, Python!"
+# print(w)
+# print(type(w))
+# print(len(w))
 
-# One special type of string is the empty string, which has length zero.
-shortest_string = ""
-print(type(shortest_string))
-print(len(shortest_string))
+# # One special type of string is the empty string, which has length zero.
+# shortest_string = ""
+# print(type(shortest_string))
+# print(len(shortest_string))
 
-# Converting numbers in string
+# # Converting numbers in string
 
-my_number = "1.12321"
-print(my_number)
-print(type(my_number))
+# my_number = "1.12321"
+# print(my_number)
+# print(type(my_number))
 
-# If we have a string that is convertible to a float, we can use float().
+# # If we have a string that is convertible to a float, we can use float().
 
-also_my_number = float(my_number)
-print(also_my_number)
-print(type(also_my_number))
+# also_my_number = float(my_number)
+# print(also_my_number)
+# print(type(also_my_number))
 
-# ust like you can add two numbers (floats or integers), you can also add two strings. It results in a longer string that combines the two original strings by concatenating them.
+# # ust like you can add two numbers (floats or integers), you can also add two strings. It results in a longer string that combines the two original strings by concatenating them.
 
-new_string = "abc" + "def"
-print(new_string)
-print(type(new_string))
+# new_string = "abc" + "def"
+# print(new_string)
+# print(type(new_string))
 
-# Note that it's not possible to do subtraction or division with two strings. You also can't multiply two strings, but you can multiply a string by an integer. This again results in a string that's just the original string concatenated with itself a specified number of times.
+# # Note that it's not possible to do subtraction or division with two strings. You also can't multiply two strings, but you can multiply a string by an integer. This again results in a string that's just the original string concatenated with itself a specified number of times.
 
-newest_string = "abc" * 3
-print(newest_string)
-print(type(newest_string))
+# newest_string = "abc" * 3
+# print(newest_string)
+# print(type(newest_string))
 
-# Note that you cannot multiply a string by a float! Trying to do so will return an error.
+# # Note that you cannot multiply a string by a float! Trying to do so will return an error.
 
-# will_not_work = "abc" * 3.
+# # will_not_work = "abc" * 3.
+
+
+# ## CONDITIONS- In programming, conditions are statements that are either True or False.
+
+
+print(2 > 3)
+
+# You can also use conditions to compare the values of variables. 
+var_one = 1
+var_two = 2
+
+print (var_one < 1)
+print (var_two >= var_one)
+
+ #   Symbol	Meaning
+ #   ==	equals
+ #   !=	does not equal
+ #   <	less than
+ #   <=	less than or equal to
+ #   >	greater than
+ #   >=	greater than or equal to
+
+ # Important Note: When you check two values are equal, make sure you use the == sign, and not the = sign.
+
+ # Conditional statements
+ # "if" statements
+
+def evaluate_temp(temp):
+    message = "Normal temperature"
+    if temp > 38:
+        message = "Fever!"
+    return message
+
+print(evaluate_temp(37))
+
+print(evaluate_temp(39))
+ 
+# "if ... else" statements - We can use "else" statements to run code if a statement is False. The code under the "if" statement is run if the statement is True, and the code under "else" is run if the statement is False.
+
+def evaluate_temp_while_else(temp):
+    if temp > 38:
+        message = "Fever!"
+    else:
+        message = "Normal temperature"
+    return message
+
+print(evaluate_temp_while_else(37))
+
+# "if ... elif ... else" statements
