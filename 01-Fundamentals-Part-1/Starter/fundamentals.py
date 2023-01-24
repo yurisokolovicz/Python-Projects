@@ -226,59 +226,94 @@
 # ## CONDITIONS- In programming, conditions are statements that are either True or False.
 
 
-print(2 > 3)
+# print(2 > 3)
 
-# You can also use conditions to compare the values of variables. 
-var_one = 1
-var_two = 2
+# # You can also use conditions to compare the values of variables. 
+# var_one = 1
+# var_two = 2
 
-print (var_one < 1)
-print (var_two >= var_one)
+# print (var_one < 1)
+# print (var_two >= var_one)
 
- #   Symbol	Meaning
- #   ==	equals
- #   !=	does not equal
- #   <	less than
- #   <=	less than or equal to
- #   >	greater than
- #   >=	greater than or equal to
+#  #   Symbol	Meaning
+#  #   ==	equals
+#  #   !=	does not equal
+#  #   <	less than
+#  #   <=	less than or equal to
+#  #   >	greater than
+#  #   >=	greater than or equal to
 
- # Important Note: When you check two values are equal, make sure you use the == sign, and not the = sign.
+#  # Important Note: When you check two values are equal, make sure you use the == sign, and not the = sign.
 
- # Conditional statements
- # "if" statements
+#  # Conditional statements
+#  # "if" statements
 
-def evaluate_temp(temp):
-    message = "Normal temperature"
-    if temp > 38:
-        message = "Fever!"
-    return message
+# def evaluate_temp(temp):
+#     message = "Normal temperature"
+#     if temp > 38:
+#         message = "Fever!"
+#     return message
 
-print(evaluate_temp(37))
+# print(evaluate_temp(37))
 
-print(evaluate_temp(39))
+# print(evaluate_temp(39))
  
-# "if ... else" statements - We can use "else" statements to run code if a statement is False. The code under the "if" statement is run if the statement is True, and the code under "else" is run if the statement is False.
+# # "if ... else" statements - We can use "else" statements to run code if a statement is False. The code under the "if" statement is run if the statement is True, and the code under "else" is run if the statement is False.
 
-def evaluate_temp_while_else(temp):
-    if temp > 38:
-        message = "Fever!"
-    else:
-        message = "Normal temperature"
-    return message
+# def evaluate_temp_while_else(temp):
+#     if temp > 38:
+#         message = "Fever!"
+#     else:
+#         message = "Normal temperature"
+#     return message
 
-print(evaluate_temp_while_else(37))
+# print(evaluate_temp_while_else(37))
 
-# "if ... elif ... else" statements - We can use "elif" (which is short for "else if") to check if multiple conditions might be true
+# # "if ... elif ... else" statements - We can use "elif" (which is short for "else if") to check if multiple conditions might be true
 
-def evaluate_temp_with_elif(temp):
-    if temp > 38:
-        message = "Fever!"
-    elif temp > 35:
-        message = "Normal temperature."
-    else:
-        message = "Low temperature."
-    return message
+# def evaluate_temp_with_elif(temp):
+#     if temp > 38:
+#         message = "Fever!"
+#     elif temp > 35:
+#         message = "Normal temperature."
+#     else:
+#         message = "Low temperature."
+#     return message
 
-print(evaluate_temp_with_elif(36))
-print(evaluate_temp_with_elif(34))
+# print(evaluate_temp_with_elif(36))
+# print(evaluate_temp_with_elif(34))
+
+# def get_taxes(earnings):
+#     if earnings < 12000:
+#         tax_owed = .25 * earnings
+#     else:
+#         tax_owed = .30 * earnings
+#     return tax_owed
+
+# ana_taxes = get_taxes(9000)
+# yuri_taxes = get_taxes(15000)
+
+# print(ana_taxes)
+# print(yuri_taxes)
+
+# def get_dose(weight):
+#     # Dosage is 1.25 ml for anyone under 5.2 kg
+#     if weight < 5.2:
+#         dose = 1.25
+#     elif weight < 7.9:
+#         dose = 2.5
+#     elif weight < 10.4:
+#         dose = 3.75
+#     elif weight < 15.9:
+#         dose = 5
+#     elif weight < 21.2:
+#         dose = 7.5
+#     # Dosage is 10 ml for anyone 21.2 kg or over
+#     else:
+#         dose = 10
+#     return dose
+
+# print(get_dose(12))
+
+
+## Intro to Lists
