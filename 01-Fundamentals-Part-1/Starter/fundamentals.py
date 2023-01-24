@@ -317,3 +317,32 @@
 
 
 ## Intro to Lists
+
+
+# Organize your data so you can work with it efficiently.
+# One way to do this is by organizing the names in a Python string.
+
+flowers = "pink primrose,hard-leaved pocket orchid,canterbury bells,sweet pea,english marigold,tiger lily,moon orchid,bird of paradise,monkshood,globe thistle"
+
+print(type(flowers))
+print(flowers)
+
+# Even better is to represent the same data in a Python list. To create a list, you need to use square brackets ([, ]) and separate each item with a comma. Every item in the list is a Python string, so each is enclosed in quotation marks.
+
+flowers_list = ["pink primrose", "hard-leaved procket orchid", "canterbury bells", "sweet pea", "english marigold", "tiger lily", "moon orchid", "bird of paradise", "monkshood", "globe thistle"]
+
+print(type(flowers_list))
+print(flowers_list)
+
+# Length
+
+print(len(flowers_list))
+
+# Indexing - We can refer to any item in the list according to its position in the list (first, second, third, etc).
+
+print("First entry:", flowers_list[0])
+print("second entry:", flowers_list[1])
+print("Last entry:", flowers_list[9]) # The list has length ten, so we refer to final entry with 9
+
+# Slicing
+
