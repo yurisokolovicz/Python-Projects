@@ -344,5 +344,40 @@ print("First entry:", flowers_list[0])
 print("second entry:", flowers_list[1])
 print("Last entry:", flowers_list[9]) # The list has length ten, so we refer to final entry with 9
 
-# Slicing
+# Slicing - Podemos extrair um segmento de uma lista (por exemplo, as três primeiras entradas ou as duas últimas entradas). Isso é chamado de fatiamento.
+
+# to pull the first x entries, you use [:x]
+# to pull the last y entries, you use [-y:]
+
+print("First three entries:", flowers_list[:3])
+print("Final two entries:", flowers_list[-2:])
+
+# Removing items¶
+# Remove an item from a list with .remove(), and put the item you would like to remove in parentheses.
+
+flowers_list.remove("globe thistle")
+print(flowers_list)
+
+# Adding items
+# Add an item to a list with .append(), and put the item you would like to add in parentheses.
+
+flowers_list.append("snapdragon")
+print(flowers_list)
+
+# Lists are not just for strings
+hardcover_sales = [139, 128, 172, 139, 191, 168, 170] # any data type: booleans, integers, floats
+print("Length of the list:", len(hardcover_sales))
+print("Entry at index 2:", hardcover_sales[2])
+
+# We can also get the minimum with min() and the maximum with max().
+
+print("Minimum:", min(hardcover_sales))
+print("Maximum:", max(hardcover_sales))
+
+# somar, usar sum()
+print("Total books sold in one week:", sum(hardcover_sales))
+
+# media
+
+print("Average books sol in first five days:", sum(hardcover_sales[:5])/5)
 
