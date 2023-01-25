@@ -316,68 +316,67 @@
 # print(get_dose(12))
 
 
-## Intro to Lists
+# ## Intro to Lists
 
 
-# Organize your data so you can work with it efficiently.
-# One way to do this is by organizing the names in a Python string.
+# # Organize your data so you can work with it efficiently.
+# # One way to do this is by organizing the names in a Python string.
 
-flowers = "pink primrose,hard-leaved pocket orchid,canterbury bells,sweet pea,english marigold,tiger lily,moon orchid,bird of paradise,monkshood,globe thistle"
+# flowers = "pink primrose,hard-leaved pocket orchid,canterbury bells,sweet pea,english marigold,tiger lily,moon orchid,bird of paradise,monkshood,globe thistle"
 
-print(type(flowers))
-print(flowers)
+# print(type(flowers))
+# print(flowers)
 
-# Even better is to represent the same data in a Python list. To create a list, you need to use square brackets ([, ]) and separate each item with a comma. Every item in the list is a Python string, so each is enclosed in quotation marks.
+# # Even better is to represent the same data in a Python list. To create a list, you need to use square brackets ([, ]) and separate each item with a comma. Every item in the list is a Python string, so each is enclosed in quotation marks.
 
-flowers_list = ["pink primrose", "hard-leaved procket orchid", "canterbury bells", "sweet pea", "english marigold", "tiger lily", "moon orchid", "bird of paradise", "monkshood", "globe thistle"]
+# flowers_list = ["pink primrose", "hard-leaved procket orchid", "canterbury bells", "sweet pea", "english marigold", "tiger lily", "moon orchid", "bird of paradise", "monkshood", "globe thistle"]
 
-print(type(flowers_list))
-print(flowers_list)
+# print(type(flowers_list))
+# print(flowers_list)
 
-# Length
+# # Length
 
-print(len(flowers_list))
+# print(len(flowers_list))
 
-# Indexing - We can refer to any item in the list according to its position in the list (first, second, third, etc).
+# # Indexing - We can refer to any item in the list according to its position in the list (first, second, third, etc).
 
-print("First entry:", flowers_list[0])
-print("second entry:", flowers_list[1])
-print("Last entry:", flowers_list[9]) # The list has length ten, so we refer to final entry with 9
+# print("First entry:", flowers_list[0])
+# print("second entry:", flowers_list[1])
+# print("Last entry:", flowers_list[9]) # The list has length ten, so we refer to final entry with 9
 
-# Slicing - Podemos extrair um segmento de uma lista (por exemplo, as três primeiras entradas ou as duas últimas entradas). Isso é chamado de fatiamento.
+# # Slicing - Podemos extrair um segmento de uma lista (por exemplo, as três primeiras entradas ou as duas últimas entradas). Isso é chamado de fatiamento.
 
-# to pull the first x entries, you use [:x]
-# to pull the last y entries, you use [-y:]
+# # to pull the first x entries, you use [:x]
+# # to pull the last y entries, you use [-y:]
 
-print("First three entries:", flowers_list[:3])
-print("Final two entries:", flowers_list[-2:])
+# print("First three entries:", flowers_list[:3])
+# print("Final two entries:", flowers_list[-2:])
 
-# Removing items¶
-# Remove an item from a list with .remove(), and put the item you would like to remove in parentheses.
+# # Removing items¶
+# # Remove an item from a list with .remove(), and put the item you would like to remove in parentheses.
 
-flowers_list.remove("globe thistle")
-print(flowers_list)
+# flowers_list.remove("globe thistle")
+# print(flowers_list)
 
-# Adding items
-# Add an item to a list with .append(), and put the item you would like to add in parentheses.
+# # Adding items
+# # Add an item to a list with .append(), and put the item you would like to add in parentheses.
 
-flowers_list.append("snapdragon")
-print(flowers_list)
+# flowers_list.append("snapdragon")
+# print(flowers_list)
 
-# Lists are not just for strings
-hardcover_sales = [139, 128, 172, 139, 191, 168, 170] # any data type: booleans, integers, floats
-print("Length of the list:", len(hardcover_sales))
-print("Entry at index 2:", hardcover_sales[2])
+# # Lists are not just for strings
+# hardcover_sales = [139, 128, 172, 139, 191, 168, 170] # any data type: booleans, integers, floats
+# print("Length of the list:", len(hardcover_sales))
+# print("Entry at index 2:", hardcover_sales[2])
 
-# We can also get the minimum with min() and the maximum with max().
+# # We can also get the minimum with min() and the maximum with max().
 
-print("Minimum:", min(hardcover_sales))
-print("Maximum:", max(hardcover_sales))
+# print("Minimum:", min(hardcover_sales))
+# print("Maximum:", max(hardcover_sales))
 
-# somar, usar sum()
-print("Total books sold in one week:", sum(hardcover_sales))
+# # somar, usar sum()
+# print("Total books sold in one week:", sum(hardcover_sales))
 
-# media
-
-print("Average books sol in first five days:", sum(hardcover_sales[:5])/5)
+# # media
+# print("Average books sol in first five days:", sum(hardcover_sales[:5])/5)
 
